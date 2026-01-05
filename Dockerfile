@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir pyrogram tgcrypto
+RUN pip install --no-cache-dir pyrofork tgcrypto
 
 COPY . .
 
