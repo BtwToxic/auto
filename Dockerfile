@@ -10,7 +10,7 @@ WORKDIR /app
 
 RUN pip install --upgrade pip
 
-RUN pip install --no-cache-dir pyrogram tgcrypto
+RUN pip install --no-cache-dir pyrofork tgcrypto
 
 COPY . .
 
