@@ -1,5 +1,9 @@
 FROM python:3.12-slim
 
-RUN pip3 install -U -r requirements.txt
+WORKDIR /app
+
+RUN pip install --no-cache-dir pyrogram tgcrypto
+
+COPY . .
 
 CMD ["python3", "bot.py"]
